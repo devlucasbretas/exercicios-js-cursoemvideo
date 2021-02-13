@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissão de Passaportes</title>
+    <style>
+        body {
+            background-color: rgb(50, 105, 207);
+            text-align: center;
+        }
+
+        input {
+            padding: 8px;
+
+        }
+        h1 {
+            align-content: center;
+        }
+
+        button {
+            text-align: center;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Identificador de Nacionalidade</h1>
+    País de Origem: <input type="text" name="naci" id="nacio">
+    <input type="button" value="Verificar" onclick="Submit()">
+    <div id="res">
+        Saida
+
+    </div>
+
+    <script>
+        var nac = window.document.getElementById("nacio")
+        var res = window.document.getElementById("res")
+        
+        function Submit() {
+            
+            if (nac = "Brasil" ) {
+                res.innerHTML = "Você É br"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+    
